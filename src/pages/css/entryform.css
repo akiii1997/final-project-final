@@ -1,0 +1,272 @@
+#dash_container{
+    width:100%;
+    height:calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#dash_items{
+    width:600px;
+    height:50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#dash_card{
+    width:260px;
+    height:300px;
+    border-radius:10px;
+    background:rgba(0,0,0,0.2);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition:0.5s;
+    cursor:pointer;
+}
+#dash_card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#tab_container{
+    height:calc(100vh - 100px);
+    display:grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+#tab_menu{
+   
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    align-items: center;
+    justify-content: space-evenly;
+    height:200px;
+    transition: 0.5s;
+}
+
+ul li{
+    width:100%;
+    height:50px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    cursor: pointer;
+    position: relative;
+    transition:0.5 all;
+}
+
+.active:after{
+    position: absolute;
+    background:rgba(0,0,255,0.3);
+    width:4px;
+    height:100%;
+    right:0;
+    top:0;
+    content:'';
+    border-radius:40px;
+    animation: animate 0.5s;
+    }
+
+ul li:hover{
+    background:rgba(0,0,0,0.20);
+}
+
+#menu_icon{
+    width:20px;
+}
+
+#menu_item_name{
+    padding-left: 15px;
+}
+
+#forms{
+width:100%;
+height:100vh;
+display:flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+}
+
+#date{
+    padding:0 10px 0px 20px;
+}
+
+#address{
+    width:100%;
+    height:120px;
+    margin-top: 10px;
+    resize: none;
+    border-radius: 10px;
+    outline: none;
+    padding:10px;
+}
+#submit{
+    width:40%;
+    float: right;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#submit:hover{
+    background:#000;
+    color:#fff;
+    transition: 0.5s;
+}
+
+#search_base{
+    float:right;
+    width:50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+#search_base::after{
+position: absolute;
+left:20px;
+width:20px;
+top:20px;
+height:20px;
+background: red;
+content: '';
+background:url('../../assets/imgs/search.svg')
+}
+#search{
+    width:100%;
+  padding:0px 0px 0px 50px;
+}
+
+#delete_search{
+    position: sticky;
+    left:0;
+    top:-20px;
+    z-index:999;
+    background:#fff;
+    width:105%;
+    padding:20px;
+
+}
+#deleteBase{
+    width:100%;
+    height:80vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding:15px;
+    margin-top:30px;
+    position: relative;
+
+ 
+}
+#deleteItem{
+    width:100%;
+    height:100px;
+    background:#fff;
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.3);
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    border-radius:10px;
+    margin-right: 10px;
+    overflow:hidden;
+    position: relative;
+}
+
+#delete_name{
+   font-weight: 800;
+    height:30px;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#delete_address{
+    position: relative;
+    height:30px;
+    margin-left: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+}
+#delete_address::after{
+    position: absolute;
+    content:'';
+    height:20px;
+    width:10px;
+    top:6px;
+    border-left:0.5px solid gray;
+    left:-5px;
+}
+
+#delete_des{
+    position: absolute;
+    top:40px;
+    left:10px;
+   
+    height:50px;
+    width:80%;
+    text-align: left;
+    
+}
+#delete_button{
+    position: absolute;
+    right:0;
+    background: rgba(0,0,255,0.1);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:15%;
+    height:100%;
+    transition: 0.5s;
+    cursor:pointer;
+}
+#delete_button:hover{
+    background: rgba(0,0,255,0.3);
+    transition: 0.5s;
+}
+
+#delete_ico{
+    width:30px;
+    height:30px;
+}
+#form_items{
+    width:50%;
+    height:50%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+#entry_base{
+    margin-left: 50%;
+    width: 50%;
+}
+
+@keyframes animate {
+   from{
+        opacity:0;
+        transform: translateX(20px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0px);
+    }
+}
+
+

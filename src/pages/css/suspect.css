@@ -1,0 +1,32 @@
+#dash_container{
+    width:100%;
+    height:calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+#dash_items{
+    width:70%;
+    height:50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+#dash_card{
+    width:260px;
+    height:300px;
+    border-radius:10px;
+    background:rgba(0,0,0,0.2);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition:0.5s;
+    cursor:pointer;
+}
+#dash_card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}

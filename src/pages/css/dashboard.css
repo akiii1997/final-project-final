@@ -1,0 +1,54 @@
+#dash_container{
+    width:100%;
+    height:calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#dash_items_dashboard{
+    width:50%;
+    height:50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+#dash_card{
+    position: relative;
+    width:280px;
+    height:320px;
+    border-radius:10px;
+    background:rgba(0,0,0,0.2);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    transition:0.5s;
+    cursor:pointer;
+    overflow: hidden;
+}
+#dash_card:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#card_img{
+    position: absolute;
+    width:100%;
+    top:0;
+    
+}
+
+#card_img_2{
+    position: absolute;
+    width:100%;
+    top:0;
+    transform: scale(0.7);
+    
+}
+
+#card_title{
+    position: absolute;
+    bottom: 80px;
+}
